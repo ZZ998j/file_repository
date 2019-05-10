@@ -1,0 +1,27 @@
+create table AMDATA.ID_MAPPING
+(
+  map_name VARCHAR2(200) not null,
+  key_id   VARCHAR2(200) not null,
+  value_id VARCHAR2(200),
+  detail   VARCHAR2(200)
+)
+tablespace AMDATA
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+comment on column AMDATA.ID_MAPPING.map_name
+  is '映射名';
+comment on column AMDATA.ID_MAPPING.key_id
+  is '映射源id';
+comment on column AMDATA.ID_MAPPING.value_id
+  is '映射目的id';
+comment on column AMDATA.ID_MAPPING.detail
+  is '描述项';
+

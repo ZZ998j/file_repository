@@ -1,0 +1,13 @@
+<Context reloadable="true">  
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>  
+    	<Resource 
+			name="P-2012-016-01"       
+			type="javax.sql.DataSource" 
+			driverClassName="oracle.jdbc.driver.OracleDriver" 
+			url="jdbc:oracle:thin:@172.22.132.80:1521:GP3WH"    
+			maxActive="100"    
+			maxIdle="100" 
+			username="OWB_DWH" 
+			password="OWB_DWH" 
+			maxWait="10000" />  
+</Context>  
